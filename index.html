@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Abhishek Sinha</h1>
+    <p>Web Developer | Java Programmer | DSA Enthusiast</p>
+  </header>
+
+  <section class="certificates">
+    <div class="card">
+      <img src="1.jpg" alt="DSA Certificate" class="cert-img" onclick="openModal(this.src)" />
+      <h3>Data Structure & Algorithm</h3>
+      <p>Apna College Certificate</p>
+    </div>
+    <div class="card">
+      <img src="2.jpg" alt="IIIT Certificate" class="cert-img" onclick="openModal(this.src)" />
+      <h3>Web Development: HTML, CSS</h3>
+      <p>IIIT Allahabad Certificate</p>
+    </div>
+    <div class="card">
+      <img src="3.jpg" alt="Java Certificate" class="cert-img" onclick="openModal(this.src)" />
+      <h3>Core Java</h3>
+      <p>United Global Certificate</p>
+    </div>
+    <div class="card">
+      <img src="4.jpg" alt="Growth Ninja Certificate" class="cert-img" onclick="openModal(this.src)" />
+      <h3>Web Development: HTML, CSS, JS</h3>
+      <p>Growth Ninja Certificate</p>
+    </div>
+  </section>
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox" class="lightbox" onclick="closeModal()">
+    <span class="close">&times;</span>
+    <img id="lightbox-img" />
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Abhishek Sinha. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
